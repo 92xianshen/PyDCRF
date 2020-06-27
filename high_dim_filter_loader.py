@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-from permutohedral_lattice import permutohedral_lattice_filter
+from cython.permutohedral_lattice import permutohedral_lattice_filter
 
 def _compute_spatial_kernel(height, width, theta_gamma):
     positions = np.zeros((height, width, 2), dtype='float32')
